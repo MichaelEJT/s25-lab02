@@ -1,8 +1,14 @@
-function square(sideLen: number): Shape {
+import { Rectangle } from "./rectangle"
+
+function square(sideLen: number): Rectangle {
     return {
-        sideLen,
+        width: sideLen,
+        height: sideLen,
         computeArea: function (): number {
             return sideLen * sideLen
+        },
+        computePerimeter: function (): number {
+            return 4 * sideLen
         }
     }
 }
