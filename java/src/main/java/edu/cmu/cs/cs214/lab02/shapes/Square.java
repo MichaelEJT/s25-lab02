@@ -10,4 +10,8 @@ public class Square implements Shape {
     public double getArea() {
         return sideLen * sideLen;
     }
+
+    public double getPerimeter() {
+        return 4 * sideLen;
+    }
 }
