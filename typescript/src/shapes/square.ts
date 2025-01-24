@@ -1,9 +1,7 @@
-import { Rectangle } from "./rectangle"
+import { Shape } from "./shape"
 
-function square(sideLen: number): Rectangle {
+function square(sideLen: number): Shape {
     return {
-        width: sideLen,
-        height: sideLen,
         computeArea: function (): number {
             return sideLen * sideLen
         },
