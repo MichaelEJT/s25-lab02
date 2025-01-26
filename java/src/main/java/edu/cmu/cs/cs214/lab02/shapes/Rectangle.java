@@ -8,6 +8,7 @@ public class Rectangle implements Shape {
         this.height = height;
         this.width = width;
     }
+    
 
     public double getArea() {
         return height * width;
